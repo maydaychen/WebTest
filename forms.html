@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+<h1 class="test">表单提交测试</h1>
+<h1 class="test1">表单提交测试</h1>
+<h1 class="test">表单提交测试</h1>
+<h1 class="test1">表单提交测试</h1>
+<form method="get">
+    请输入你的姓名：
+    <input type="text" name="yourname">
+    <input type="submit" value="提交">
+</form>
+请选择你最喜欢的水果：<br>
+
+<form action="http://www.admin5.com/html/asdocs/html_tutorials/choose.asp" method="post">
+    <input type="radio" name="fruit" value="Apple">苹果<br>
+    <input type="radio" name="fruit" value="Orange">桔子<br>
+    <input type="radio" name="fruit" value="Mango">芒果<br>
+    <input type="submit" value="提交">
+</form>
+
+<form action="http://www.admin5.com/html/asdocs/html_tutorials/choose.asp" method="post">
+    你最喜欢的水果是：
+    <select name="fruit" size="2">
+        <option value="apple">苹果
+        <option value="orange">桔子
+        <option value="mango">芒果
+    </select>
+    <input type="submit" value="提交">
+</form>
+<form action="http://www.admin5.com/html/asdocs/html_tutorials/suggest.asp" method="get">
+    请提宝贵意见：<br>
+    <textarea name="yoursuggest" cols="50" rows="3"></textarea>
+    <br>
+    <input type="submit" value="提交">
+</form>
+<form action="http://www.admin5.com/html/asdocs/html_tutorials/userpw.asp" method="post">
+    请输入你的姓名：
+    <input type="text" name="yourname"><br>
+    请输入你的密码：
+    <input type="password" name="yourpw"><br>
+    <input type="submit" value="提交">
+</form>
+
+</body>
+</html>
