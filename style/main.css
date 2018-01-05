@@ -1,71 +1,61 @@
+/* 这是我写的第一个 CSS 文件，内心十分的激动，在这心潮澎湃之余，我想到了一个真理 —— 稻米鼠真帅！ */
+/*CSS RESET*/
 html, body {
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
-
-#nav {
-    height: 50px;
-    background: #F3F3F3;
-    padding: 0 30px;
-    min-width: 960px;
-}
-
-#logo {
-    float: left;
-}
-
-#logo a {
-    color: #333;
-    text-decoration: none;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 50px;
-}
-
-#nav-items {
-    float: left;
-    margin: 0;
-}
-
-#nav-items-r {
-    float: right;
-    margin: 0;
-}
-
-#nav .nav-item {
-    float: left;
-    list-style: none;
-    border-right: 1px solid #DDD;
-
-}
-
-#nav .nav-item a {
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 50px;
-    display: block;
-    height: 50px;
-    padding: 0 20px;
-}
-
-#nav .nav-item:last-child {
-    border: none;
-}
-
-#nav .nav-item a:hover {
-    height: 40px;
-    padding-top: 5px;
-    line-height: 40px;
-    background: #DDD;
-    border-bottom: 5px solid #999;
-}
-
+/*用来清除浮动的类*/
 .clear {
     clear: both;
 }
-
+/*以下是导航部分*/
+#nav {
+    background:#F3F3F3;
+    padding:0 30px;
+}
 #nav .nav-content {
-    width: 960px;
+    width:960px;
     margin:0 auto;
+}
+#logo {
+    float: left;
+}
+#logo a {
+    line-height: 50px;
+    font-size:24px;
+    font-weight: 700;
+    text-decoration: none;
+    color:#333;
+}
+#nav-items {
+    float: left;
+    margin:0;
+}
+#nav-items-r {
+    float: right;
+    margin:0;
+}
+#nav .nav-item {
+    float:left;
+    list-style: none;
+    border-right:1px solid #DDD;
+}
+#nav .nav-item:last-child{
+    border:none;
+}
+#nav .nav-item a {
+    display: block;
+    padding: 0 20px;
+    height: 50px;
+    line-height: 50px;
+    font-size:16px;
+    text-decoration: none;
+    color:#333;
+}
+#nav .nav-item a:hover {
+    padding-top: 5px;
+    height: 40px;
+    background: #DDD;
+    line-height: 40px;
+    border-bottom: 5px solid #999;
 }
