@@ -1,134 +1,167 @@
 /* 这是我写的第一个 CSS 文件，内心十分的激动，在这心潮澎湃之余，我想到了一个真理 —— 稻米鼠真帅！ */
 /*CSS RESET*/
 html, body {
-    margin: 0;
-    padding: 0;
+	margin:0;
+	padding:0;
 }
-
 /*用来清除浮动的类*/
 .clear {
-    clear: both;
+	clear: both;
 }
-
 /*以下是导航部分*/
 #nav {
-    background: #F3F3F3;
-    padding: 0 30px;
+	background:#F3F3F3;
+	padding:0 30px;
 }
-
 #nav .nav-content {
-    width: 960px;
-    margin: 0 auto;
+	width:960px;
+	margin:0 auto;
 }
-
 #logo {
-    float: left;
+	float: left;
 }
-
 #logo a {
-    line-height: 50px;
-    font-size: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #333;
+	line-height: 50px;
+	font-size:24px;
+	font-weight: 700;
+	text-decoration: none;
+	color:#333;
 }
-
 #nav-items {
-    float: left;
-    margin: 0;
+	float: left;
+	margin:0;
 }
-
 #nav-items-r {
-    float: right;
-    margin: 0;
+	float: right;
+	margin:0;
 }
-
 #nav .nav-item {
-    float: left;
-    list-style: none;
-    border-right: 1px solid #DDD;
+	float:left;
+	list-style: none;
+	border-right:1px solid #DDD;
 }
-
-#nav .nav-item:last-child {
-    border: none;
+#nav .nav-item:last-child{
+	border:none;
 }
-
 #nav .nav-item a {
-    display: block;
-    padding: 0 20px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 16px;
-    text-decoration: none;
-    color: #333;
+	display: block;
+	padding: 0 20px;
+	height: 50px;
+	line-height: 50px;
+	font-size:16px;
+	text-decoration: none;
+	color:#333;
 }
-
 #nav .nav-item a:hover {
-    padding-top: 5px;
-    height: 40px;
-    background: #DDD;
-    line-height: 40px;
-    border-bottom: 5px solid #999;
+	padding-top: 5px;
+	height: 40px;
+	background: #DDD;
+	line-height: 40px;
+	border-bottom: 5px solid #999;
 }
-
-#post, #post-a, #post-b {
-    width: 100%;
-    height: 450px;
+#post, #post-a, #post-b  {
+	width: 100%;
+	height: 450px;
 }
-
 #post {
-    background: url(../images/bg.jpg) center -250px;
+	background: url(../images/bg.jpg) center -250px;
 }
-
 #post-a {
-    background: url(../images/bg-a.jpg) center 0px;
+	background: url(../images/bg-a.jpg) center 0px;
 }
-
 #post-b {
-    background: url(../images/bg-b.jpg) center -250px;
+	background: url(../images/bg-b.jpg) center -250px;
 }
-
 .post-content {
-    width: 960px;
-    height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    color: #EFEFEF;
-    text-align: center;
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	color: #EFEFEF;
+	text-align: center;
 }
-
 #post .post-content h1 {
-    margin-top: 120px;
-    font-size: 42px;
+	margin-top: 120px;
+	font-size: 42px;
 }
-
 #post .post-content button {
-    padding: 16px;
-    border: 5px solid #DDF;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 8px;
-    background: #CCE;
+	padding: 12px;
+	margin-top: 36px;
+	background: #CCE;
+	border: 5px solid #DDF;
+	font-size: 18px;
+	font-weight: 600;
 }
-
 .post-content .post-text {
-    float: left;
-    width: 510px;
-    padding-top: 165px;
-    font-size: 28px;
-    line-height:  60px;
+	float: left;
+	width: 510px;
+	padding-top: 165px;
+	font-size: 28px;
+	line-height:  60px;
 }
 .post-content .post-text h3 {
-    margin: 0;
-    font-size: 36px;
+	margin: 0;
+	font-size: 36px;
 }
 .post-content .post-icon {
-    float: left;
-    width: 256px;
-    height: 256px;
-    padding: 97px;
+	float: left;
+	width: 256px;
+	height: 256px;
+	padding: 97px;
 }
 .post-content .post-icon img {
-    width: 256px;
-    height: 256px;
+	width: 256px;
+	height: 256px;
+}
+
+#boxes {
+	width: 960px;
+	margin: 0 auto;
+}
+#boxes .box {
+	float: left;
+	width: 300px;
+	padding: 138px 10px 10px;
+	margin-top: 30px;
+	background: url(../images/box-icon.png) center 10px no-repeat;
+    text-align: center;
+}
+#boxes .box h3 {
+	font-size: 24px;
+	font-weight: 300;
+}
+#footer {
+	padding: 30px 0;
+	background:#F3F3F3;
+	border-top: 3px solid #EFEFEF;
+}
+#footer .footer-content {
+	width: 960px;
+	margin: 0 auto;
+}
+#footer ul {
+	float: left;
+	width:300px;
+	margin: 0;
+	padding:0;
+}
+#footer ul li {
+	padding:10px 0;
+}
+#footer ul li a {
+	text-decoration: none;
+	color: #333;
+}
+#qrcode {
+	float: right;
+}
+#qrcode img {
+	width: 210px;
+	height: 210px;
+    padding: 20px;
+}
+#qrcode img:hover {
+    width: 250px;
+    height: 250px;
+    padding: 0;
 }

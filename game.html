@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #start {
+            width: 64px;
+            height: 64px;
+            padding: 4px;
+            position: relative;
+            background: #CC0000;
+            border: 5px solid #CCCCFF;
+            border-radius: 40px;
+            font-size: 16px;
+            color: #FCFCFC;
+            line-height: 64px;
+            text-align: center;
+        }
+        .mouse {
+            display: none;
+            width: 10px;
+            height: 10px;
+            background: #CC0000;
+            position: absolute;
+            left: 10px;
+            top:0;
+        }
+        #start:hover {
+            background: #CCCCFF;
+        }
+        #start>.mouse {
+            left: 74px;
+            top: 35px;
+        }
+        #start:hover>.mouse {
+            display: block;
+        }
+        .mouse:hover {
+            background: #CCCCFF;
+        }
+        .mouse:hover>.mouse {
+            display: block;
+        }
+        .md {
+            left: 0;
+            top: 10px;
+        }
+        .ml {
+            left: -10px;
+            top: 0;
+        }
+        .mu {
+            left: 0;
+            top: -10px;
+        }
+    </style>
+</head>
+<body>
+<div id="start">Start
+    <div class="mouse">
+        <div class="mouse">
+            <div class="mouse md">
+                <div class="mouse md">
+                    <div class="mouse md">
+                        <div class="mouse ml">
+                            <div class="mouse ml"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
