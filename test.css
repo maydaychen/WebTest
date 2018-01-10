@@ -5,3 +5,18 @@
 .test1 {
     background: blue;
 }
+
+#div-gaojie{
+    padding-top: 20px;
+}
+#div-gaojie p2{
+    background: #eeeeee;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+#div-gaojie button{
+    background: #41a6ff;
+    padding: 10px;
+    color: white;
+}

@@ -2,20 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jquery</title>
+    <title>JS练习</title>
     <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+    <link href="test.css" rel="stylesheet" type="text/css">
     <script>
         $(function () {
             $("button").click(function () {
                 var test = $("#one").val();
                 $("#two").val(test);
             })
+            $("#sum").click(function () {
+                sum(1, 2, 3, 4, 5, 6);
+            })
         })
     </script>
 </head>
 <body>
-<input type="text" id="one">
-<input type="text" id="two">
-<button>点击</button>
+<div>
+
+    <input type="text" id="one">
+    <input type="text" id="two">
+    <button>点击</button>
+    <button onclick="area_of_circle(2)">求圆面积</button>
+    <button id="sum">求rest累加</button>
+    <button onclick="test1()">测试var</button>
+</div>
+
+<div id="div-gaojie">
+    <p2>高阶函数</p2>
+    <button onclick="product([1, 2, 3, 4])">测试reduce</button>
+    <button onclick="int2String([1, 2, 3, 4])">测试int转string</button>
+    <button onclick="String2int('12345')">测试String转int</button>
+    <button onclick="test(['adam', 'LISA', 'barT'])">练习3</button>
+    <button onclick="qukong(['A', '', 'B', null, undefined, 'C', '  '])">filter去除空元素</button>
+    <button onclick="quchong(['apple', 'strawberry', 'banana', 'pear', 'apple', 'orange', 'orange', 'strawberry'])">filter去重</button>
+</div>
 </body>
 </html>
