@@ -62,3 +62,66 @@ function quchong(arr) {
     }))
 }
 
+function paixu(arr) {
+    const arrr = arr.sort();
+    alert(arrr);
+    alert(arr.sort(function (s1, s2) {
+        let x1 = s1.toUpperCase();
+        let x2 = s2.toUpperCase();
+        if (x1 < x2) {
+            return -1;
+        }
+        if (x1 > x2) {
+            return 1;
+        }
+        return 0;
+    }))
+}
+
+function fib(max) {
+    let t,
+        a = 0,
+        b = 1,
+        arr = [0, 1];
+    while (arr.length < max) {
+        [a, b] = [b, a + b];
+        arr.push(b);
+    }
+    alert(arr);
+}
+
+function changeDOM(a) {
+    if (a === 1) {
+        const dom = document.getElementById('dom-test');
+        // dom.innerHTML = 'ABC'
+        dom.innerHTML = 'ABC <span style="color:red">RED</span> XYZ';
+    } else {
+        const dom = document.getElementById('dom-test');
+        dom.style.color = 'blue'
+    }
+}
+
+function addDOM() {
+    var list = document.getElementById('div-explore');
+    var haskell = document.createElement('button');
+    haskell.id = 'haskell';
+    haskell.innerText = 'Haskell';
+    list.appendChild(haskell)
+
+}
+
+function addDOMchangeStyle() {
+    var d = document.createElement('style');
+    d.setAttribute('type', 'text/css');
+    d.innerHTML = 'button { background: red }';
+    document.getElementsByTagName('head')[0].appendChild(d);
+}
+
+
+function deleteDom() {
+    var list = document.getElementById('div-explore');
+    var deleted = document.getElementById('haskell');
+    list.removeChild(deleted);
+}
+
+

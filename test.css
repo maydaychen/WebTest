@@ -6,16 +6,21 @@
     background: blue;
 }
 
-#div-gaojie{
+#div-gaojie {
     padding-top: 20px;
 }
-#div-gaojie p2{
+
+#div-explore {
+    padding-top: 20px;
+}
+
+p2 {
     background: #eeeeee;
     padding: 8px;
     margin-top: 8px;
 }
 
-#div-gaojie button{
+button {
     background: #41a6ff;
     padding: 10px;
     color: white;
